@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Midjourney Image</title>
+    <script>
+        function getRandomImage() {
+            const images = [
+                "https://www.midjourney.com/explore?tab=random",
+                "https://www.midjourney.com/explore?tab=random",
+                "https://www.midjourney.com/explore?tab=random"
+            ];
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            window.location.href = randomImage;
+        }
+    </script>
+</head>
+<body onload="getRandomImage()">
+    <h2>Зачекайте, відкриваємо випадкове зображення...</h2>
+</body>
+</html>
